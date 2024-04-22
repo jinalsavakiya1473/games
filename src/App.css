@@ -1,0 +1,271 @@
+.left{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0px 10px !important;
+    border-radius: 5px;
+}
+.main-cal .calculater{
+    background: #000;
+    border-radius: 30px !important;
+    border: gray solid 5px;
+    margin-top: 50px;
+    padding: 10px;
+}
+.main-cal .slide{
+    height: 70px;
+    width: 350px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 40px;
+    background: #CDDECE;
+    text-align: right;
+}
+.main-cal .solar{
+    width: 120px;
+    height: 30px;
+    background: #46463C;
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+.main-cal .border{
+    border: 1px solid white;
+    width: 350px;
+    margin: 15px;
+}
+.main-cal .btn{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    border: 0;
+    background-color: white;
+    color: black;
+}
+.main-cal h1{
+    color: white;
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 100px;
+}
+.main-cal .btn_long{
+    width:60px;
+    height: 140px;
+    border-radius: 20px; 
+    font-size:30px; 
+    text-align:center;
+    border: 0;
+}
+.main-cal .btn_big{
+    width:150px ; 
+    height: 60px;
+    border-radius: 20px; 
+    font-size:30px; 
+    text-align:center;
+    border: 0;
+}
+.main-cal .btn_sign{
+    background: #FE7D4C;
+    color: white;
+}
+.main-cal .btn_close{
+    background:#66CC33;
+    color: black;
+}
+  /* tic tac random */
+  input{
+    font-size: 35px;
+    font-weight: bold;
+    background: #2FC0F5;
+    border: white 2px solid;
+    color: white;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    justify-content: center;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: #E2474D;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: #192B99;
+}
+.player{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    color: #76007A;
+}
+#reset{
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 700px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* number puzzle */
+.puzz .main{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin-top: 150px;
+    padding: 5px;
+    border-radius: 30px;
+    background: #2A1B09;
+    margin-left: 600px;
+    border: 20px solid #B35914;
+}
+.puzz .main input{
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: Bahnschrift;
+    border-radius: 10px;
+    box-shadow: 3px 3px #7B5A26,-3px -3px #7B5A26;
+    background: #DCAC5D;
+    color: #6E361C;
+    border: 0;
+    margin: 3px;
+}
+.puzz h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: #800000;
+}
+/* =========================== home =========================== */
+.home div{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.home button{
+    background-color: #fff;
+    background-position: 0 90%;
+    background-size: 4px 3px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    padding: .75rem;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+.home button:hover{
+    box-shadow: rgba(0, 0, 0, .4) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+/* ================================ todo ========================== */
+.Todo .left{
+    background-color:#8052ec ;
+    font-size: 30px;
+}
+.Todo *,
+.Todo *:before,
+.Todo *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body .Todo{
+    height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+.Todo .container{
+    width: 60%;
+    min-width: 450px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    padding: 30px 40px;
+}
+.Todo .newtask{
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.Todo .newtask input{
+    width: 75%;
+    height: 55px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+}
+.Todo .newtask input:focus{
+    outline: none;
+    border-color: #8052ec;
+}
+
+.Todo .newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 55px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #8052ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.Todo .tasks{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+}
+.Todo li{
+    list-style: none;
+    width: 50%;
+    background-color: #F4F4F4;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Todo .btn{
+    background-color: #8052EC !important;
+    color: white !important;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 8px 15px;
+    border: none;
+}
