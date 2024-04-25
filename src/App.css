@@ -109,15 +109,22 @@ h2{
     justify-content: space-evenly;
     color: #76007A;
 }
-#reset{
+.reset-btn .rs{
     font-size: 25px;
-    padding: 10px;
-    margin-left: 700px;
-    margin-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
+    border: 0;
+    background-color: #2FC0F5;
+    color: white;
+}
+.reset-btn{
+    text-align: center;
+    margin: 15px 0;
 }
 /* number puzzle */
+.puzz{
+    display: flex;
+    justify-content: center;
+}
 .puzz .main{
     display: inline-grid;
     grid-template-columns: repeat(3, 100px);
@@ -126,7 +133,6 @@ h2{
     padding: 5px;
     border-radius: 30px;
     background: #2A1B09;
-    margin-left: 600px;
     border: 20px solid #B35914;
 }
 .puzz .main input{
@@ -189,10 +195,10 @@ h2{
 body .Todo{
     height: 100vh;
     background: linear-gradient(135deg, #8052ec, #d161ff);
+    width: 100%;
 }
 .Todo .container{
-    width: 60%;
-    min-width: 450px;
+    width: 55%;
     position: absolute;
     margin: auto;
     left: 0;
@@ -268,4 +274,19 @@ body .Todo{
     margin-left: 5px;
     padding: 8px 15px;
     border: none;
+}
+@media (max-width: 500px){
+    .Todo .container{
+        width: 100%;
+    }
+    .Todo .newtask{
+        padding: 15px;
+    }
+    .Todo .tasks{
+        padding: 0px;
+    }
+    .Todo .btn{
+        padding: 5px;
+        font-size: 12px;
+    }
 }

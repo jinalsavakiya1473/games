@@ -70,7 +70,10 @@ function Tictacran() {
                 <p>Player : X </p>
                 <p>Computer : O </p>
             </div>
-            <input type="button" defaultValue="RESET" id="reset" onClick={reset} name />
+            <div className='reset-btn'>
+                    <button className='rs' onClick={reset}>RESET</button>
+                </div>
+            <div>
             <div className="main">
                 <input type="button" name value={btn[0]} onClick={()=>tic(0)} disabled={(result!=="") ? true : false}/>
                 <input type="button" name value={btn[1]} onClick={()=>tic(1)} disabled={(result!=="") ? true : false}/>
@@ -81,6 +84,7 @@ function Tictacran() {
                 <input type="button" name value={btn[6]} onClick={()=>tic(6)} disabled={(result!=="") ? true : false}/>
                 <input type="button" name value={btn[7]} onClick={()=>tic(7)} disabled={(result!=="") ? true : false}/>
                 <input type="button" name value={btn[8]} onClick={()=>tic(8)} disabled={(result!=="") ? true : false}/>
+            </div>
             </div>
             <h2>{result}</h2>
         </div>

@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Calculater from './component/Calculater';
 import Tictac from './component/Tictac';
 import Tictacran from './component/Tictacran';

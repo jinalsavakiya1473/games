@@ -49,7 +49,7 @@ function Todo() {
         </div>
         <ul className="tasks">
           {tasks.map((task, index) => (
-            <div className='d-flex'>
+            <div className='d-flex flex-wrap'>
               <li key={index}>
                 {task}
                 <div>

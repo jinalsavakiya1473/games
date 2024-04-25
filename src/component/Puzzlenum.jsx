@@ -56,7 +56,7 @@ function Puzzlenum() {
     }
     
     return (
-        <div>
+        <div className='puzzle'>
             <Link to="/" className='left'><FaLongArrowAltLeft /></Link>
             <div className='puzz'>
                 <div className="main">

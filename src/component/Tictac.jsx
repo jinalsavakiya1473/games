@@ -65,7 +65,9 @@ function Tictac() {
                     <h2>player 1 : X</h2>
                     <h2>player 2 : O</h2>
                 </div>
-                <input type="button" id="reset" name Value="RESET" onClick={reset}/>
+                <div className='reset-btn'>
+                    <button className='rs' onClick={reset}>RESET</button>
+                </div>
                 <div className="main">
                     <input type="button" className="box" value={btn[0]} onClick={() => { tic(0) }} disabled={(result!=="") ? true : false} />
                     <input type="button" className="box" value={btn[1]} onClick={() => { tic(1) }} disabled={(result!=="") ? true : false}/>
