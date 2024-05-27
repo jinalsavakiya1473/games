@@ -8,10 +8,8 @@
 }
 .main-cal .calculater{
     background: #000;
-    border-radius: 30px !important;
-    border: gray solid 5px;
-    margin-top: 50px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 10px !important;
 }
 .main-cal .slide{
     height: 70px;
@@ -36,7 +34,7 @@
     width: 350px;
     margin: 15px;
 }
-.main-cal .btn{
+.main-cal .btn_c{
     height: 65px;
     width: 65px;
     border-radius: 50%;
@@ -44,8 +42,6 @@
     text-align: center;
     margin-bottom: 5px;
     border: 0;
-    background-color: white;
-    color: black;
 }
 .main-cal h1{
     color: white;
@@ -79,44 +75,44 @@
     color: black;
 }
   /* tic tac random */
-  input{
+.tic-tac input{
     font-size: 35px;
     font-weight: bold;
     background: #2FC0F5;
     border: white 2px solid;
     color: white;
 }
-.main{
+.tic-tac .main{
     display: grid;
     grid-template-columns: repeat(3, 70px);
     grid-template-rows: repeat(3, 70px);
     justify-content: center;
 }
-h1{
+.tic-tac h1{
     font-size: 50px;
     text-align: center;
     color: #E2474D;
 }
-h2{
+.tic-tac h2{
     font-size: 25px;
     text-align: center;
     color: #192B99;
 }
-.player{
+.tic-tac .player{
     font-size: 25px;
     font-weight: bold;
     display: flex;
     justify-content: space-evenly;
     color: #76007A;
 }
-.reset-btn .rs{
+.tic-tac .reset-btn .rs{
     font-size: 25px;
     padding: 10px 20px;
     border: 0;
     background-color: #2FC0F5;
     color: white;
 }
-.reset-btn{
+.tic-tac .reset-btn{
     text-align: center;
     margin: 15px 0;
 }

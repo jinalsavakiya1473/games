@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
 function Tictac() {
+    
     const [btn, setbtn] = useState(['', '', '', '', '', '', '', '', ''])
     const [player,setplayer]=useState(0);
     const [result,setresult]=useState('');
@@ -57,7 +58,7 @@ function Tictac() {
     }
 
     return (
-        <div>
+        <div className='tic-tac'>
             <Link to="/" className='left'><FaLongArrowAltLeft /></Link>
             <div className='main-tic'>
                 <h1 className='my-5'>TIC TAC TOE</h1>

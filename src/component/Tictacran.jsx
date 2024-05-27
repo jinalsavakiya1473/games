@@ -63,7 +63,7 @@ function Tictacran() {
         setwinning(0)
      }
     return (
-        <div className='random'>
+        <div className='tic-tac'>
             <Link to="/" className='left'><FaLongArrowAltLeft /></Link>
             <h1>TIC TAC GAME</h1>
             <div className="player">

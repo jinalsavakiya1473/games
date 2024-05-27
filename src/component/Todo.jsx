@@ -11,15 +11,15 @@ function Todo() {
 
   const addTask = () => {
     const newTask = inputValue;
-    if(editValue == true){
+    if(editValue === true){
       const newTasks = [...tasks];
       newTasks[editIndex] = inputValue;
       setTasks(newTasks);
-      setEditIndex(false);
-      setEditValue('');
+      setEditValue(false);
+      setEditIndex('');
+      setInputValue('')
     }
     else {
-      const newTask = inputValue;
       if (newTask !== '') {
         setTasks([...tasks, newTask]);
         setInputValue('');
@@ -34,7 +34,7 @@ function Todo() {
   };
 
   const editTask = (index) => {
-    setEditIndex(index);
+    setEditIndex(index);  
     setEditValue(true);
     setInputValue(tasks[index])
   }
